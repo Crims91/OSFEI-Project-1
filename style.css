@@ -1,3 +1,154 @@
 html {
   font-size: 15px;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  max-width: 1366px;
+  margin: auto;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/*  Page
+=================== */
+
+.page {
+  width: 100%;
+  height: 100vh;
+  min-height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*  1st Menu
+=================== */
+
+.first-menu-block {
+  height: 50px;
+
+  background: #ffffff;
+}
+
+.first-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 107px;
+  padding: 1rem;
+}
+
+.nav-button {
+  color: #524658;
+  text-decoration: none;
+}
+
+.left-nav-button {
+  margin: 0.5rem;
+  padding: 1rem;
+
+  text-decoration: none;
+}
+
+.right-nav-button {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  padding-right: 10px; /* to make room for the line */
+}
+
+.right-nav-button:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* position the line in the middle of the element */
+  right: 0;
+  height: 1rem; /* set the height of the line */
+  width: 1px;
+  transform: translateY(-50%); /* vertically center the line */
+
+  background-color: black;
+}
+
+/*  2nd Menu
+=================== */
+
+.second-menu-block {
+  height: 81px;
+
+  border-top: 1px solid rgba(82, 70, 88, 0.16);
+  background: rgba(248, 248, 248, 1);
+}
+
+.second-menu {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 107px;
+}
+
+.second-nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.second-nav-button {
+  text-decoration: none;
+  color: #524658;
+  font-size: 1.2rem;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.second-nav-button:not(:last-child) {
+  border: none;
+}
+
+.second-expand-button::after {
+  content: "\00a0\25BE";
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ec6225;
+  color: #fff;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  margin-left: 32px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
