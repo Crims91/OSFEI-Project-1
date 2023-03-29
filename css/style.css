@@ -209,36 +209,37 @@ button:hover {
   margin-bottom: 32px;
 }
 
-/* .hero-form {
-  position: relative;
-  margin-top: 32px;
-} */
-
 .hero-form {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
   display: flex;
   justify-content: end;
   align-items: center;
-  max-width: 480px;
 
   margin: 0 auto 40px auto;
 }
 
 .hero-input {
+  color: #524658;
+  font-weight: 600;
+
   height: 48px;
   padding-left: 20px;
-  width: 480px;
+  width: 100%;
 
   border: 0;
   border-radius: 30px;
-  margin-right: 50px;
 }
 
 .hero-form-button {
-  /* position: absolute; */
-  padding: 0;
-  border-radius: 30px;
-  background-color: transparent;
-  /* margin-left: -50px; */
+  position: absolute;
+  height: 50px;
+  background: no-repeat #ec6225;
+
+  padding: 0 4px;
+  border-radius: 50px;
+  border: none;
 }
 
 .hero-button {
@@ -250,9 +251,10 @@ button:hover {
 }
 
 .hero-ranking {
+  margin: 0 auto;
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
-  width: 350px;
-  height: 18px;
+  width: 267px;
+  height: 19px;
 }
