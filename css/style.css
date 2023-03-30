@@ -578,6 +578,11 @@ details > summary {
   margin: 0 15px;
 }
 
+.help-icon {
+  height: 64px;
+  width: 64px;
+}
+
 /*  MEDIA
 =================== */
 
