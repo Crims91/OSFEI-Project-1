@@ -249,12 +249,16 @@ button:hover {
 
 .hero-form-button {
   position: absolute;
-  height: 50px;
-  background: #ec6225;
+  background: none;
 
-  padding: 0 4px;
+  padding: 0;
+  margin: 3px 2px 0;
   border-radius: 50px;
-  border: none;
+}
+
+.hero-form-button-logo {
+  height: 44px;
+  width: 44px;
 }
 
 .hero-button {
@@ -280,6 +284,7 @@ button:hover {
 .cards-section {
   display: flex;
   flex-direction: column;
+
   padding-bottom: 50px;
 
   background: rgba(248, 248, 248, 1);
@@ -344,6 +349,8 @@ button:hover {
 }
 
 .card {
+  background: #ffffff;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,9 +380,19 @@ button:hover {
   font-size: 15px;
 }
 
-.card-cost::before {
+.first-card-cost::before {
   content: "£27.50";
+}
 
+.second-card-cost::before {
+  content: "£37.50";
+}
+
+.fird-card-cost::before {
+  content: "£49.00";
+}
+
+.card-cost::before {
   color: #c81162;
   font-size: 18px;
   text-decoration: line-through;
@@ -396,34 +413,54 @@ button:hover {
   width: 100%;
 }
 
+.download-video-block p {
+  margin-bottom: 6px;
+}
+
+.download-bar {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+  max-width: 296px;
+  height: 8px;
+  margin-bottom: 28px;
+
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
 .download-line {
-  transform: rotate(-180deg);
   width: 59px;
   height: 8px;
   background-image: linear-gradient(
     90deg,
-    rgba(200, 17, 98, 1),
-    rgba(205, 32, 93, 1) 8%,
-    rgba(210, 47, 88, 1) 16%,
-    rgba(214, 61, 83, 1) 26%,
-    rgba(219, 76, 77, 1) 36%,
-    rgba(223, 90, 72, 1) 46%,
-    rgba(228, 104, 67, 1) 57%,
-    rgba(232, 118, 62, 1) 68%,
-    rgba(236, 132, 57, 1) 77%,
-    rgba(241, 145, 52, 1) 87%,
-    rgba(244, 158, 47, 1) 99%
+    #c81162 0%,
+    #cd205d 8.33%,
+    #d22f58 15.62%,
+    #d63d53 26.04%,
+    #db4c4d 35.94%,
+    #df5a48 46.35%,
+    #e46843 57.29%,
+    #e8763e 68.23%,
+    #ec8439 76.56%,
+    #f19134 87.5%,
+    #f49e2f 98.96%
   );
   border-radius: 4px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .card-advantages-list {
   position: relative;
-  list-style-type: none;
+
   padding: 5px;
 }
 
 .card-advantage-item {
+  list-style-image: url(../img/check-icon.svg);
+  list-style-position: inside;
+
   color: #524658;
 
   font-size: 15px;
@@ -436,16 +473,8 @@ button:hover {
   font-weight: 700;
 }
 
-.card-advantages-list li::before {
-  content: "\2713"; /* Unicode character for checkmark symbol */
-  color: red;
-  font-size: 20px;
-  margin-right: 5px;
-}
-
 .card-button {
-  min-width: 256px;
-  max-width: 296px;
+  min-width: 296px;
   color: #fff;
   background: #ec6225;
 }
@@ -453,4 +482,135 @@ button:hover {
 .cards-measures {
   font-size: 12px;
   text-align: center;
+}
+
+/*  FAQ Section
+=================== */
+
+.faq-header {
+  font-family: "Arboria", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+
+  color: #370050;
+
+  padding: 56px 0 32px 0;
+  text-align: center;
+}
+
+.faq-block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 64px;
+  max-width: 760px;
+}
+
+.faq-box {
+  font-family: "Arboria", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #370050;
+  background: #f8f8f8;
+
+  padding: 31px;
+  line-height: 27px;
+  height: 90px;
+  margin-bottom: 16px;
+
+  border-radius: 20px;
+}
+
+details > summary {
+  list-style: none;
+}
+
+.faq {
+  position: relative;
+}
+
+.faq-close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.faq-button {
+  width: 275px;
+  height: 46px;
+  margin: 0 auto;
+  color: #ec6225;
+  background-color: #fef1e1;
+}
+
+/*  Help Section
+=================== */
+
+.help-header {
+  font-family: "Arboria", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+
+  color: #370050;
+
+  padding: 56px 0 32px 0;
+  text-align: center;
+}
+
+.help-cards {
+  border: solid 1px red;
+
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  padding: 0;
+}
+
+.help-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 18px;
+  color: #370050;
+
+  margin: 0 15px;
+}
+
+/*  MEDIA
+=================== */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .first-menu-block {
+    display: none;
+  }
+
+  .header-logo {
+    width: 150px;
+    height: 40px;
+  }
+
+  .second-menu {
+    padding: 0;
+  }
+
+  .second-nav-menu {
+    padding: 0;
+  }
+
+  .arrow-expand {
+    display: none;
+  }
+  .second-nav-menu div:nth-of-type(2) {
+    display: none;
+  }
+
+  .second-nav-menu button:nth-of-type(1) {
+    display: none;
+  }
 }

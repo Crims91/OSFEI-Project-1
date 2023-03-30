@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community Fibre Test</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/NewStyles.css" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <section class="page">
@@ -36,6 +29,10 @@
           </div>
         </div>
 
+        <div>
+          <div></div>
+        </div>
+
         <div class="second-menu-block">
           <div class="container">
             <div class="second-menu">
@@ -49,7 +46,6 @@
                 </a>
               </div>
               <nav class="second-nav-menu">
-                <!-- Recomendation: make ul and from each div make li -->
                 <div class="second-nav-button expand-nav-button">
                   <a href="">Broadband</a>
                   <span class="arrow-expand">&#9660;</span>
@@ -69,6 +65,7 @@
       </header>
 
       <main>
+        <!-- Hero-Section -->
         <section class="hero-section">
           <div class="container">
             <div class="hero-block">
@@ -77,7 +74,8 @@
               </div>
               <h1 class="hero-title">
                 We're faster and over $500 cheaper
-                <br> than the big guys</br>
+                <br />
+                than the big guys
               </h1>
               <h4 class="hero-heading">
                 Get 19x the UK average download speed with our 1,000 Mbps
@@ -90,7 +88,11 @@
                   placeholder="Check your address to get started"
                 />
                 <button class="hero-form-button">
-                  <img src="img/arrow-button.svg" alt="Arrow Button" />
+                  <img
+                    class="hero-form-button-logo"
+                    src="img/arrow-button.svg"
+                    alt="Arrow Button"
+                  />
                 </button>
               </form>
               <button class="hero-button">Get your deal</button>
@@ -103,10 +105,9 @@
           </div>
         </section>
 
+        <!-- Cards-Section -->
         <section class="cards-section">
           <div class="container">
-
-
             <h2 class="cards-title">
               It's a no brainer! Grab your ultimate deal
             </h2>
@@ -115,95 +116,102 @@
               <button class="second-month-button">12 months</button>
             </div>
             <ul class="cards-list">
-                <li class="card">
-                  <h3 class="card-header">200 Mbps <br> Fibre Broadband</h3>
-                  <h2 class="card-cost">£25<span>/month</span></h2>
-                  <div class="download-video-block">
-                    <p>Download/upload a video (100 MB)</p>
-                    <p>26.6s</p>
-                  </div>
-                    <div class="download-line">
+              <li class="card first-card">
+                <h3 class="card-header">200 Mbps<br />Fibre Broadband</h3>
+                <h2 class="card-cost first-card-cost">
+                  £25<span>/month</span>
+                </h2>
+                <div class="download-video-block">
+                  <p>Download/upload a video (100 MB)</p>
+                  <p>26.6s</p>
+                </div>
+                <div class="download-bar">
+                  <div class="download-line"></div>
+                </div>
+                <ul class="card-advantages-list">
+                  <li class="card-advantage-item">
+                    For moderate use on multiple devices, streaming HD, browsing
+                    and downloads
+                  </li>
+                  <li class="card-advantage-item">
+                    Avg. download/upload: 200mbps
+                  </li>
+                  <li class="card-advantage-item">
+                    £32.50/month after initial contract
+                  </li>
+                  <li class="card-advantage-item">
+                    <span> FREE </span> installation and setup
+                  </li>
+                  <li class="card-advantage-item">
+                    <span> FREE </span> Linksys Tri-Band WiFi router
+                  </li>
+                </ul>
+                <button class="card-button">Check Availability</button>
+              </li>
+              <li class="card second-card">
+                <h3 class="card-header">500 Mbps<br />Fibre Broadband</h3>
+                <h2 class="card-cost second-card-cost">
+                  £35<span>/month</span>
+                </h2>
+                <div class="download-video-block">
+                  <p>Download/upload a video (100 MB)</p>
+                  <p>26.6s</p>
+                </div>
+                <div class="download-bar">
+                  <div class="download-line"></div>
+                </div>
+                <ul class="card-advantages-list">
+                  <li class="card-advantage-item">
+                    For heavy use on multiple devices streaming 4K, gaming &
+                    downloading
+                  </li>
+                  <li class="card-advantage-item">
+                    Avg. download/upload: 500 Mbps
+                  </li>
+                  <li class="card-advantage-item">
+                    £42.50/month after initial contract
+                  </li>
+                  <li class="card-advantage-item">
+                    <span> FREE </span> installation and setup
+                  </li>
+                  <li class="card-advantage-item">
+                    <span> FREE </span> Linksys Tri-Band WiFi router
+                  </li>
+                </ul>
+                <button class="card-button">Check Availability</button>
+              </li>
+              <li class="card fird-card">
+                <h3 class="card-header">1Gbps<br />Fibre Broadband</h3>
+                <h2 class="card-cost fird-card-cost">£45<span>/month</span></h2>
+                <div class="download-video-block">
+                  <p>Download/upload a video (100 MB)</p>
+                  <p>26.6s</p>
+                </div>
+                <div class="download-bar">
+                  <div class="download-line"></div>
+                </div>
+                <ul class="card-advantages-list">
+                  <li class="card-advantage-item">
+                    Large heavy use households, multiple devices streaming 4K
+                    content & gaming
+                  </li>
+                  <li class="card-advantage-item">
+                    Avg. download/upload: 920 Mbps
+                  </li>
+                  <li class="card-advantage-item">
+                    £54/month after initial contract FREE
+                  </li>
+                  <li class="card-advantage-item">
+                    <span> FREE </span> installation and setup
+                  </li>
+                  <li class="card-advantage-item">
+                    <span> FREE </span> Linksys Tri-Band WiFi router
+                  </li>
+                </ul>
+                <button class="card-button">Check Availability</button>
+              </li>
+            </ul>
 
-                    </div>
-                  <ul class="card-advantages-list">
-                    <li class="card-advantage-item">
-                      For moderate use on multiple devices, streaming HD,
-                      browsing and downloads
-                    </li>
-                    <li class="card-advantage-item">
-                      Avg. download/upload: 200mbps
-                    </li>
-                    <li class="card-advantage-item">
-                      £32.50/month after initial contract
-                    </li>
-                    <li class="card-advantage-item">
-                      <span> FREE </span> installation and setup
-                    </li>
-                    <li class="card-advantage-item">
-                      <span> FREE </span> Linksys Tri-Band WiFi router
-                    </li>
-                  </ul>
-                  <button class="card-button">Check Availability</button>
-                </li>
-                <li class="card">
-                  <h3 class="card-header">200 Mbps <br> Fibre Broadband</h3>
-                  <h2 class="card-cost">£35<span>/month</span></h2>
-                  <div class="download-video-block">
-                    <p>Download/upload a video (100 MB)</p>
-                    <p>26.6s</p>
-                  </div>
-                    <div class="download-line">
-
-                    </div>
-                  <ul class="card-advantages-list">
-                    <li class="card-advantage-item">
-                      For heavy use on multiple devices streaming 4K, gaming & downloading
-                    </li>
-                    <li class="card-advantage-item">
-                      Avg. download/upload: 500 Mbps
-                    </li>
-                    <li class="card-advantage-item">
-                      £42.50/month after initial contract
-                    </li>
-                    <li class="card-advantage-item">
-                      <span> FREE </span> installation and setup
-                    </li>
-                    <li class="card-advantage-item">
-                      <span> FREE </span> Linksys Tri-Band WiFi router
-                    </li>
-                  </ul>
-                  <button class="card-button">Check Availability</button>
-                </li>
-                <li class="card">
-                  <h3 class="card-header">500 Mbps <br> Fibre Broadband</h3>
-                  <h2 class="card-cost">£45<span>/month</span></h2>
-                  <div class="download-video-block">
-                    <p>Download/upload a video (100 MB)</p>
-                    <p>26.6s</p>
-                  </div>
-                    <div class="download-line">
-
-                    </div>
-                  <ul class="card-advantages-list">
-                    <li class="card-advantage-item">
-                      Large heavy use households, multiple devices streaming 4K content & gaming
-                    </li>
-                    <li class="card-advantage-item">
-                      Avg. download/upload: 920 Mbps
-                    </li>
-                    <li class="card-advantage-item">
-                      £54/month after initial contract FREE
-                    </li>
-                    <li class="card-advantage-item">
-                      <span> FREE </span> installation and setup
-                    </li>
-                    <li class="card-advantage-item">
-                      <span> FREE </span> Linksys Tri-Band WiFi router
-                    </li>
-                  </ul>
-                  <button class="card-button">Check Availability</button>
-                </li>
-          </ul>
             <p class="cards-measures">
               *Theoretical measures: rely on the path through the internet to
               the server and the server itself, being capable of supporting
@@ -213,9 +221,73 @@
               <h4>Excellent</h4>
               <img src="img/stars-logo.svg" alt="" />
               <img src="img/trust-pilot-black.svg" alt="" />
+            </div>
           </div>
-        </div>
+        </section>
 
+        <!-- FAQ-Section -->
+        <section class="faq-section">
+          <div class="container">
+            <h3 class="faq-header">FAQs</h3>
+            <div class="faq-block">
+              <div class="faq first-faq">
+                <details class="faq-box">
+                  <summary>Question?</summary>
+                  <p>Ask Something</p>
+                </details>
+                <img
+                  class="faq-close-icon"
+                  src="/img/faq-close-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="faq second-faq">
+                <details class="faq-box">
+                  <summary>Question?</summary>
+                  <p>Ask Something</p>
+                </details>
+                <img
+                  class="faq-close-icon"
+                  src="/img/faq-close-icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="faq fird-faq">
+                <details class="faq-box">
+                  <summary>Question?</summary>
+                  <p>Ask Something</p>
+                </details>
+                <img
+                  class="faq-close-icon"
+                  src="/img/faq-close-icon.svg"
+                  alt=""
+                />
+              </div>
+              <button class="faq-button">See All FAQs</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Help-Section -->
+        <section class="help-section">
+          <div class="container">
+            <h3 class="help-header">Need Help?</h3>
+            <ul class="help-cards">
+              <li class="help-card">
+                <img class="help-icon" src="/img/help-icon-1.svg" alt="" />
+                <h4>For Customer Service</h4>
+              </li>
+              <li class="help-card">
+                <img class="help-icon" src="/img/help-icon-2.svg" alt="" />
+
+                <h4>To purchase our packages</h4>
+              </li>
+              <li class="help-card">
+                <img class="help-icon" src="/img/help-icon-3.svg" alt="" />
+                <h4>For more help</h4>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
     </section>
