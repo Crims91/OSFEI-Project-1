@@ -52,6 +52,17 @@ a {
   text-decoration: none;
 }
 
+.page {
+  max-width: 100vw;
+  min-height: 750px;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 button {
   font-family: "Arboria", sans-serif;
   font-weight: 500;
@@ -67,19 +78,6 @@ button {
 
 button:hover {
   opacity: 0.8;
-}
-
-/*  Page
-=================== */
-
-.page {
-  max-width: 100vw;
-  min-height: 750px;
-}
-
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
 }
 
 /*  1st Menu
@@ -114,23 +112,35 @@ button:hover {
   position: relative;
   display: inline-block;
   margin-right: 5px;
-  padding-right: 10px; /* to make room for the line */
+  padding-right: 10px;
 }
 
 .right-nav-button:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 50%; /* position the line in the middle of the element */
+  top: 50%;
   right: 0;
-  height: 15px; /* set the height of the line */
+  height: 15px;
   width: 1px;
-  transform: translateY(-50%); /* vertically center the line */
+  transform: translateY(-50%);
 
   background-color: black;
 }
 
 /*  2nd Menu
 =================== */
+.header-brand-menu {
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.burger-button {
+  display: none;
+  padding: 0;
+}
 
 .second-menu-block {
   min-height: 81px;
@@ -145,11 +155,11 @@ button:hover {
 }
 
 .second-menu {
-  padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 12px 0;
 }
 
 .second-nav-menu {
@@ -208,16 +218,17 @@ button:hover {
 }
 
 .hero-title {
-  margin: 32px 0;
-
   line-height: 52px;
   font-size: 45px;
   color: #ffffff;
   text-align: center;
+
+  margin: 32px 0;
 }
 
 .hero-heading {
   font-weight: 400;
+  text-align: center;
 
   margin-bottom: 32px;
 }
@@ -282,9 +293,6 @@ button:hover {
 =================== */
 
 .cards-section {
-  display: flex;
-  flex-direction: column;
-
   padding-bottom: 50px;
 
   background: rgba(248, 248, 248, 1);
@@ -341,8 +349,11 @@ button:hover {
 }
 
 .cards-list {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin-bottom: 32px;
@@ -350,7 +361,7 @@ button:hover {
 
 .card {
   background: #ffffff;
-
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,7 +400,7 @@ button:hover {
 }
 
 .fird-card-cost::before {
-  content: "£49.00";
+  content: "£49";
 }
 
 .card-cost::before {
@@ -474,7 +485,7 @@ button:hover {
 }
 
 .card-button {
-  min-width: 296px;
+  width: 90%;
   color: #fff;
   background: #ec6225;
 }
@@ -553,16 +564,13 @@ details > summary {
 
   color: #370050;
 
-  padding: 56px 0 32px 0;
+  padding: 56px 0 10px 0;
   text-align: center;
 }
 
 .help-cards {
-  border: solid 1px red;
-
   display: flex;
   justify-content: center;
-  list-style: none;
 
   padding: 0;
 }
@@ -571,27 +579,58 @@ details > summary {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+
+  width: 100%;
+  max-width: 250px;
 
   font-size: 18px;
   color: #370050;
 
-  margin: 0 15px;
+  margin: 15px;
+}
+
+.help-card p {
+  line-height: 27px;
+}
+
+.help-card h4,
+p {
+  margin-bottom: 8px;
+}
+
+.call-line {
+  font-weight: 500;
+}
+
+.call-line span {
+  color: #ec6225;
+  text-decoration: underline;
 }
 
 .help-icon {
-  height: 64px;
-  width: 64px;
+  margin-bottom: 5px;
 }
 
 /*  MEDIA
 =================== */
 
-@media only screen and (max-width: 600px) {
-  .container {
-    max-width: 80%;
+@media only screen and (max-width: 955px) {
+  .cards-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
+  .card {
+    width: 100%;
+    max-width: 352px;
+  }
   .first-menu-block {
+    display: none;
+  }
+
+  .second-nav-menu {
     display: none;
   }
 
@@ -602,20 +641,36 @@ details > summary {
 
   .second-menu {
     padding: 0;
-  }
-
-  .second-nav-menu {
-    padding: 0;
+    display: block;
   }
 
   .arrow-expand {
     display: none;
   }
-  .second-nav-menu div:nth-of-type(2) {
-    display: none;
+
+  .help-cards {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .second-nav-menu button:nth-of-type(1) {
-    display: none;
+  .header-brand {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+  }
+
+  .burger-button {
+    display: inline-block;
+    background: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .second-nav-button {
+    border: none;
   }
 }

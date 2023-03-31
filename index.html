@@ -29,10 +29,6 @@
           </div>
         </div>
 
-        <div>
-          <div></div>
-        </div>
-
         <div class="second-menu-block">
           <div class="container">
             <div class="second-menu">
@@ -44,6 +40,9 @@
                     alt="Brand Logo"
                   />
                 </a>
+                <button class="burger-button">
+                  <img src="/img/burger-icon.svg" alt="" />
+                </button>
               </div>
               <nav class="second-nav-menu">
                 <div class="second-nav-button expand-nav-button">
@@ -59,6 +58,13 @@
                 </div>
                 <button class="second-menu-button">Get started</button>
               </nav>
+              <div class="nav-mobile">
+                <a class="second-nav-button" href="">Broadband</a>
+                <a class="second-nav-button" href="">TV</a>
+
+                <a class="second-nav-button" href="">Calls</a>
+                <a class="second-nav-button" href="">Deals</a>
+              </div>
             </div>
           </div>
         </div>
@@ -115,8 +121,8 @@
               <button class="first-month-button">24 months</button>
               <button class="second-month-button">12 months</button>
             </div>
-            <ul class="cards-list">
-              <li class="card first-card">
+            <div class="cards-list">
+              <div class="card first-card">
                 <h3 class="card-header">200 Mbps<br />Fibre Broadband</h3>
                 <h2 class="card-cost first-card-cost">
                   £25<span>/month</span>
@@ -147,8 +153,9 @@
                   </li>
                 </ul>
                 <button class="card-button">Check Availability</button>
-              </li>
-              <li class="card second-card">
+              </div>
+
+              <div class="card second-card">
                 <h3 class="card-header">500 Mbps<br />Fibre Broadband</h3>
                 <h2 class="card-cost second-card-cost">
                   £35<span>/month</span>
@@ -179,8 +186,9 @@
                   </li>
                 </ul>
                 <button class="card-button">Check Availability</button>
-              </li>
-              <li class="card fird-card">
+              </div>
+
+              <div class="card fird-card">
                 <h3 class="card-header">1Gbps<br />Fibre Broadband</h3>
                 <h2 class="card-cost fird-card-cost">£45<span>/month</span></h2>
                 <div class="download-video-block">
@@ -209,9 +217,8 @@
                   </li>
                 </ul>
                 <button class="card-button">Check Availability</button>
-              </li>
-            </ul>
-
+              </div>
+            </div>
             <p class="cards-measures">
               *Theoretical measures: rely on the path through the internet to
               the server and the server itself, being capable of supporting
@@ -274,16 +281,31 @@
             <h3 class="help-header">Need Help?</h3>
             <ul class="help-cards">
               <li class="help-card">
-                <img class="help-icon" src="/img/help-icon-1.svg" alt="" />
+                <img
+                  class="help-icon"
+                  src="/img/help-icon-1.svg"
+                  height="64px"
+                  width="64px"
+                  alt=""
+                />
                 <h4>For Customer Service</h4>
+                <p>Monday - Friday: 8am - 10pm</p>
+                <p>Weekends: 9am - 7pm</p>
+                <p class="call-line">Call us on: <span>0800 082 0770</span></p>
               </li>
               <li class="help-card">
                 <img class="help-icon" src="/img/help-icon-2.svg" alt="" />
                 <h4>To purchase our packages</h4>
+                <p>Monday - Friday: 9am - 8pm</p>
+                <p>Saturday: 9am - 5pm</p>
+                <p class="call-line">Call us on: <span>0808 196 6262</span></p>
               </li>
               <li class="help-card">
                 <img class="help-icon" src="/img/help-icon-3.svg" alt="" />
                 <h4>For more help</h4>
+                <p>Get in touch with our Customer</p>
+                <p>Service Team</p>
+                <p class="call-line"><span>Submit a request</span></p>
               </li>
             </ul>
           </div>
